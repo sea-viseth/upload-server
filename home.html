@@ -7,11 +7,13 @@
     <title>Upload Video</title>
   </head>
   <body>
-    <form action="/upload-video" method="POST" enctype="multipart/form-data">
-      <input type="file" name="video" accept="video/*" />
+    <h1>Upload Images</h1>
+    <form action="/upload-images" method="POST" enctype="multipart/form-data">
+      <input type="file" name="images" multiple />
       <button type="submit">Submit</button>
     </form>
     <br />
+    <h1>Upload Videos</h1>
     <form action="/upload-videos" method="POST" enctype="multipart/form-data">
       <input type="file" name="videos" accept="video/*" multiple />
       <button type="submit">Submit</button>
